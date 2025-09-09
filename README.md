@@ -1,23 +1,26 @@
 # langchain-js-practice
+
 Step-by-step LangChain JS practice roadmap with free resources, weekly exercises, RAG, agents, memory, and deployment.
 
 # 🌟 Overview
+
 This repo is a 4-week hands-on learning path for LangChain JS.
 You’ll build real LLM-powered apps using free/local models (Ollama), plus optional integrations (OpenAI, Anthropic, HuggingFace).
 
 # ✅ What you’ll learn
-  Prompt engineering & model chaining
-  
-  Retrieval-Augmented Generation (RAG) with FAISS
-  
-  Tools & Agents (including LangGraph workflows)
-  
-  Memory for conversations
-  
-  Deployment with Express
+
+Prompt engineering & model chaining
+
+Retrieval-Augmented Generation (RAG) with FAISS
+
+Tools & Agents (including LangGraph workflows)
+
+Memory for conversations
+
+Deployment with Express
 
 📂 Repo Structure
-    
+
     langchain-js-practice/
     │── README.md                # This file
     │── .env.example             # Env template
@@ -53,20 +56,21 @@ You’ll build real LLM-powered apps using free/local models (Ollama), plus opti
         ├── 17-conversation-summary.js
         └── 18-deployment-tips.md
 
-
 # ⚡ Setup
+
 1. Clone & Install
-    git clone https://github.com/yourusername/langchain-js-practice.git
-    cd langchain-js-practice
-    npm init -y
-    npm install langchain @langchain/ollama @langchain/community faiss dotenv express
+   git clone https://github.com/yourusername/langchain-js-practice.git
+   cd langchain-js-practice
+   npm init -y
+   npm install langchain @langchain/ollama @langchain/community faiss dotenv express
 
 # 2. Setup Environment
+
     cp .env.example .env
     If using Ollama locally:
-    
+
     Install Ollama → https://ollama.com
-    
+
     Pull a model:
 
       ollama pull llama2
@@ -77,89 +81,55 @@ Optional APIs (OpenAI, Anthropic, HuggingFace) can be added later in .env.
 # 📅 Learning Roadmap
 
 # Week 1 – Foundations
+
     LangChain Models (ChatOllama, OpenAI)
-    
     PromptTemplate & ChatPromptTemplate
-    
     Runnable pipelines (RunnableSequence)
-    
     Output parsers (string, JSON)
-    
+
     📖 Free Resources:
-    
-    LangChain JS: Getting Started
-    
-    PromptTemplates
-    
+            LangChain JS: Getting Started
+            PromptTemplates
     🛠 Exercises:
-    
-    Build a chain that takes {topic} and outputs a JSON with "summary" and "keywords".
+            Build a chain that takes {topic} and outputs a JSON with "summary" and "keywords".
 
 # Week 2 – RAG (Retrieval-Augmented Generation)
+
     Load documents
-    
     Split into chunks
-    
     Embeddings (OllamaEmbeddings)
-    
     Vector stores (FAISS)
-    
     RAG pipeline
-    
+
     📖 Free Resources:
-    
-    LangChain: Document Loaders
-    
-    FAISS VectorStore
-    
+            LangChain: Document Loaders
+            FAISS VectorStore
     🛠 Exercises:
-    
-    Index sample.txt into FAISS and query: “What is this text about?”
-    
+            Index sample.txt into FAISS and query: “What is this text about?”
+
 # Week 3 – Agents & Tools
+
     Chains vs Agents
-    
     Custom tools
-    
     Function calling (OpenAI style)
-    
     LangGraph basics
-    
     Micro-agents & mixture of agents
-    
+
     📖 Free Resources:
-    
-    LangChain: Tools
-    
-    LangGraph Docs
-    
+            LangChain: Tools
+            LangGraph Docs
     🛠 Exercises:
-    
-    Build a custom get_weather(city) tool and use it in an agent.
-    
+            Build a custom get_weather(city) tool and use it in an agent.
+
 # Week 4 – Memory & Deployment
+
     BufferMemory & ConversationSummaryMemory
-    
     Long conversation management
-    
     RAG API with Express
-    
     Deployment tips (Render, Vercel, Railway)
-    
+
     📖 Free Resources:
-    
-    LangChain: Memory
-    
-    Express Docs
-    
+            LangChain: Memory
+            Express Docs
     🛠 Exercises:
-    
-    Deploy a RAG chatbot API (/chat) with memory.
-
-# 🏆 Progressive Challenge Set
-    After each week, test yourself with progressively harder questions:
-    👉 Progressive Challenges (optional separate file if you want to keep README lean)
-
-# 🤝 Contributing
-    This repo is for practice & learning.
-    PRs for improvements (better examples, new free resources) are welcome!
+            Deploy a RAG chatbot API (/chat) with memory.
