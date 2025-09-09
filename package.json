@@ -1,0 +1,20 @@
+{
+  "name": "langchain-js-practice",
+  "version": "1.0.0",
+  "description": "Step-by-step LangChain JS practice roadmap with free resources, weekly exercises, RAG, agents, memory, and deployment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.3.55",
+    "@langchain/ollama": "^0.2.4",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "faiss": "^1.0.0",
+    "langchain": "^0.3.33"
+  }
+}
